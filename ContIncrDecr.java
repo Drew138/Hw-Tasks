@@ -6,8 +6,9 @@ public class ContIncrDecr {
         int contador = 0;
         String message = "";
         Scanner scan = new Scanner(System.in);
-        double unkDouble = scan.nextDouble();
-        boolean isGreater = unkDouble > num;
+        String unkDouble = scan.next();
+        unkDouble = unkDouble.replace(",", ".");
+        boolean isGreater = Double.parseDouble(unkDouble) > num;
         do {
             if (isGreater) {
                 contador += 1;
@@ -16,10 +17,11 @@ public class ContIncrDecr {
                 contador -= 1;
                 message = message.concat("-1\n");
             }
-            num = unkDouble;
-            unkDouble = scan.nextDouble();
-            isGreater = unkDouble > num;
-        } while (unkDouble != 0);
+            num = Double.parseDouble(unkDouble);
+            unkDouble = scan.next();
+            unkDouble = unkDouble.replace(",", ".");
+            isGreater = Double.parseDouble(unkDouble) > num;
+        } while (Double.parseDouble(unkDouble) != 0);
         System.out.println(message + "\nContador: " + contador);
         scan.close();
     }
