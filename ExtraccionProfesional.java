@@ -5,9 +5,7 @@ public class ExtraccionProfesional {
         Scanner scan = new Scanner(System.in);
         String word = scan.nextLine();
         String name, lastname;
-
         word = word.substring(18, word.length() - 1);
-
         int indName = word.indexOf("<");
         name = word.substring(0, indName);
         int indLast = word.indexOf("\'lastname\'>") + 11;
