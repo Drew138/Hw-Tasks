@@ -8,8 +8,9 @@ public class fibonnacciRecursive {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        solutions.put(0, 1);
+        solutions.put(0, 0);
         solutions.put(1, 1);
+        solutions.put(2, 1);
         System.out.println(fibonnacciRecursive.fibonnacci(num));
         scan.close();
     }
