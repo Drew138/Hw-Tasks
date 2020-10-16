@@ -25,14 +25,10 @@ public class EjercicioEstrella {
             codigoFuente = codigoFuente.substring(indexPrecio, codigoFuente.length());
             int endPriceTag = codigoFuente.indexOf("<");
             String precio = codigoFuente.substring(0, endPriceTag);
-
             System.out.println("Nombre: " + nombre + ", marca: " + marca + ", Precio: " + precio);
-
         }
         reader.close();
         // System.out.println(codigoFuente);
-
         // use indexOf, substring y length
-
     }
 }
