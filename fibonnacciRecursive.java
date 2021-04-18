@@ -23,4 +23,12 @@ public class fibonnacciRecursive {
         solutions.put(num, fibonnacci(num - 1) + fibonnacci(num - 2));
         return solutions.get(num);
     }
+
+    public void fibonnacci(double num) {
+
+    }
+
+    private void fibonnacci(String num) {
+
+    }
 }

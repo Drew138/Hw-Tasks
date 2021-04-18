@@ -17,29 +17,24 @@ public class Estrellas {
             switch (rating) {
                 case 0:
                     zeros += 1;
-                    total += 1;
                     break;
                 case 1:
                     ones += 1;
-                    total += 1;
                     break;
                 case 2:
                     twos += 1;
-                    total += 1;
                     break;
                 case 3:
                     threes += 1;
-                    total += 1;
                     break;
                 case 4:
                     fours += 1;
-                    total += 1;
                     break;
                 case 5:
                     fives += 1;
-                    total += 1;
                     break;
             }
+            total += 1;
             rating = scan.nextInt();
         }
         scan.close();
